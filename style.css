@@ -7,9 +7,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
-
-
 /*@font-face {
   font-family: 'Cabin';
   font-weight: 400;
@@ -325,4 +322,38 @@ section.about_us .about_us_inner p {
 .project_stats_inner .grid-stats .text {
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+.testimonials_section_inner h3 {
+  font-weight: 300;
+  font-size: 2.3rem;
+}
+.testimonials_section_inner h2 {
+    font-size: 2.9rem;
+    margin: 0 auto;
+    width: 55%;
+}
+.testimonials_section_inner .testimonials_list {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials_section_inner .testimonials_list li {
+  background-color: #fff;
+  padding: 50px 20px;
+  border: 1px solid;
+  margin: 10px;
+}
+.testimonials_section_inner .testimonials_list .name {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+}
+.testimonials_section_inner .testimonials_list .occupation {
+  color: #a89c9c;
+  text-transform: uppercase;
+}
+.view_more_testimonials .btn {
+  color: var(--black);
 }
