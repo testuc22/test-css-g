@@ -294,7 +294,7 @@ section.about_us .about_us_inner p {
     grid-template-columns: auto auto auto auto;
     gap: 20px;
 }
-.project_stats_inner .grid-stats li {
+.project_stats_inner .grid-stats li .boxes{
   background-color: #fff;
   border-radius: 10px;
   padding: 20px 50px;
