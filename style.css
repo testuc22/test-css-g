@@ -165,6 +165,13 @@ a, button{
     display: inline-block;
     margin-top: 10px;
     border-radius: 10px;
+    background: linear-gradient(90deg, var(--yellow) 50%, rgb(0, 0, 0) 50%);
+    background-size: 202% 100%;
+    transition:0.2s;
+}
+.promo-banner-inner a:hover {
+  background-position: 100%;
+  color: #fff;
 }
 .btn.our-portfolio {
     background-color: var(--yellow);
@@ -298,6 +305,7 @@ section.about_us .about_us_inner p {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px 50px;
+  height: 100%;
 }
 .project_stats_inner .grid-stats li:first-child{
     grid-column: 1 / span 2;
@@ -306,8 +314,8 @@ section.about_us .about_us_inner p {
     grid-column: 3 / span 2;
 }
 
-.project_stats_inner .grid-stats li:first-child,
-.project_stats_inner .grid-stats li:nth-child(2){
+.project_stats_inner .grid-stats li:nth-child(-n+2) .boxes
+{
     display: flex;
   justify-content: center;
   align-items: center;
@@ -319,6 +327,13 @@ section.about_us .about_us_inner p {
 .project_stats_inner .grid-stats .count {
     font-size: 3rem;
     font-weight: 700;
+}
+.project_stats_inner .grid-stats li:nth-child(-n+2) .boxes .count {
+  margin: 0 10px;
+}
+.project_stats_inner .grid-stats li:nth-child(-n+2) .boxes .text {
+  font-size: 2.4rem;
+  width: min-content;
 }
 .project_stats_inner .grid-stats .text {
   font-size: 1.2rem;
